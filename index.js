@@ -26,6 +26,7 @@ const formatDuration = seconds => {
         );
     } catch (err) {
         if (err instanceof AssertionError) return 'now';
+        throw err;
     }
 };
 
